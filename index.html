@@ -30,9 +30,9 @@
   <meta property="og:image" content="https://imgur.com/a/k6raYAC">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="og:image:alt" content="World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy - Research Preview">
   <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:author" content="Xiaokang Liu">
   <meta property="article:section" content="Research">
   <meta property="article:tag" content="KEYWORD1">
   <meta property="article:tag" content="KEYWORD2">
@@ -44,17 +44,17 @@
   <!-- TODO: Replace with first author's Twitter handle -->
   <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
   <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
+  <meta name="twitter:title" content="World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy">
   <!-- TODO: Same as description above -->
   <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Same as social preview image above -->
   <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:image:alt" content="World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy - Research Preview">
 
   <!-- Academic/Research Specific (skip) -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_title" content="World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy">
+  <meta name="citation_author" content="Liu, Xiaokang">
+  <meta name="citation_author" content="Bai, Zechen">
   <meta name="citation_publication_date" content="2024">
   <meta name="citation_conference_title" content="CONFERENCE_NAME">
   <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
@@ -114,7 +114,7 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
+    "headline": "World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy",
     "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
     "author": [
       {
@@ -318,6 +318,7 @@
         <div class="columns is-centered">
             <div class="column is-full">
                 <div class="content">
+                  <h2 class="title is-3 has-text-centered">Our Method</h2>
                     <div class="level-set has-text-justified">
                         <p>
                             World-VLA-Loop framework consists of four phases.
@@ -348,7 +349,7 @@
                         <!-- Your image here -->
                         <img src="figures/framework.png" alt="A table comparing probing to previous approaches"/>
                         <h2 class="subtitle has-text-centered">
-                            <em><b>Full pipeline of our proposed framework.</b></em> 
+                            <b>Full pipeline of our proposed framework.</b>
                         </h2>
                     </div>
                 </div>
@@ -358,46 +359,167 @@
 </section>
 
 <section class="section hero is-small">
-    <div class="container is-max-desktop">
-        <div class="columns is-centered">
-            <div class="column is-full">
-                <div class="content">
-                    <div class="level-set has-text-justified">
-                        <p>
-                            We propose <em>Deep Linear Probe Generators</em> (<strong>ProbeGen</strong>) for learning better probes. ProbeGen optimizes a
-                            deep generator module limited to linear expressivity, that shares information between the
-                            different probes. It then observes the responses from all probes, and trains an MLP classifier on
-                            them. While simple, we demonstrate it greatly enhances probing methods, and also outperforms
-                            other approaches by a large margin.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="hero teaser">
-    <div class="container is-max-desktop">
-        <div class="hero-body">
-            <img src="static/images/ProbeGen_results.png" alt="Main results of our method ProbeGen"/>
-        </div>
-    </div>
-</section>
-
-
-<section class="section hero is-small">
-    <div class="container is-max-desktop">
-        <div class="columns is-centered">
-            <div class="column is-full">
-                <div class="content">
-                    <div class="level-set has-text-justified">
-                        <p>
-                            ProbeGen represents each model as an ordered list of output
-                            values based on carefully chosen probes. These representations often have semantic meanings as
-                            the output space of the model (here, image pixels or logits) are semantic by design.
-                        </p>
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-3 has-text-centered">World Model Generation Results</h2>
+            <div class="columns is-centered">
+                <div class="column is-four-fifths">
+                    <div id="results-carousel" class="carousel results-carousel">
+                        <!-- Page 1: Real-World -->
+                        <div class="item">
+                            <h3 class="title is-4 has-text-centered" style="margin-bottom: 20px;">Real-World</h3>
+                            <div class="columns is-multiline">
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page1/1.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page1/2.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page1/3.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page1/4.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Page 2: LIBERO-Object -->
+                        <div class="item">
+                            <h3 class="title is-4 has-text-centered" style="margin-bottom: 20px;">LIBERO-Object</h3>
+                            <div class="columns is-multiline">
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page2/1.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page2/2.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page2/3.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page2/4.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Page 3: LIBERO-Goal -->
+                        <div class="item">
+                            <h3 class="title is-4 has-text-centered" style="margin-bottom: 20px;">LIBERO-Goal</h3>
+                            <div class="columns is-multiline">
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page3/1.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page3/2.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page3/3.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page3/4.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Page 4: LIBERO-Spatial -->
+                        <div class="item">
+                            <h3 class="title is-4 has-text-centered" style="margin-bottom: 20px;">LIBERO-Spatial</h3>
+                            <div class="columns is-multiline">
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page4/1.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page4/2.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page4/3.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page4/4.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -409,38 +531,155 @@
 <section class="section hero is-small">
     <div class="hero-body">
         <div class="container">
-            <div id="results-carousel" class="carousel results-carousel">
-                <div class="item">
-                    <!-- Your image here -->
-                    <img src="static/images/mnist_queries.png" alt="MNIST INR Representation visualization"/>
-                    <h2 class="subtitle has-text-centered">
-                        <em><b>MNIST INR Representations.</b></em> ProbeGen chooses object centric locations as suitable for this task,
-                        while Vanilla Probing chooses locations scattered around the image, including pixels far out of the image.
-                    </h2>
-                </div>
-                <div class="item">
-                    <!-- Your image here -->
-                    <img src="static/images/cifar_queries.png" alt="CIFAR10 Wild Park Representation visualization"/>
-                    <h2 class="subtitle has-text-centered">
-                        <em><b>CIFAR10 Wild Park Representations.</b></em> The values become more uniform as the accuracy of the models
-                        decreases, and sharper as it increases. This suggests that ProbeGen uses some form of prediction
-                        entropy in its classifier. We validate this by training a classifier that only takes the
-                        entropy of each probe as its features, which already reaches a Kendallâ€™s Ï„ of 0.877.
-                    </h2>
-                </div>
-                <div class="item">
-                    <!-- Your image here -->
-                    <img src="static/images/probes_comp_flat_space.png" alt="Comparing the probes learned from different algorithms"/>
-                    <h2 class="subtitle has-text-centered">
-                        <em><b>ProbeGen vs. Vanilla Probing Learned Probes.</b></em> Although both not interpetable by humans,
-                        it is clear that ProbeGen probes have much more structure than latent-optimized ones.
-                    </h2>
+            <h2 class="title is-3 has-text-centered">RL Fine-tuned VLA Performance</h2>
+            <div class="columns is-centered">
+                <div class="column is-four-fifths">
+                    <div id="results-carousel" class="carousel results-carousel">
+                        <!-- Page 1: Real-World -->
+                        <div class="item">
+                            <h3 class="title is-4 has-text-centered" style="margin-bottom: 20px;">Real-World (Original Speed)</h3>
+                            <div class="columns is-multiline">
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page1/1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page1/2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page1/3.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page1/4.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Page 2: LIBERO-Object -->
+                        <div class="item">
+                            <h3 class="title is-4 has-text-centered" style="margin-bottom: 20px;">LIBERO-Object</h3>
+                            <div class="columns is-multiline">
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page2/1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page2/2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page2/3.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page2/4.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Page 3: LIBERO-Goal -->
+                        <div class="item">
+                            <h3 class="title is-4 has-text-centered" style="margin-bottom: 20px;">LIBERO-Goal</h3>
+                            <div class="columns is-multiline">
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page3/1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page3/2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page3/3.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page3/4.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Page 4: LIBERO-Spatial -->
+                        <div class="item">
+                            <h3 class="title is-4 has-text-centered" style="margin-bottom: 20px;">LIBERO-Spatial</h3>
+                            <div class="columns is-multiline">
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page4/1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page4/2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page4/3.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="column is-one-quarter">
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/VLA_videos/page4/4.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 
 
 <!--BibTex citation -->
