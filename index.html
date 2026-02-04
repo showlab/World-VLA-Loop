@@ -397,7 +397,7 @@
     <div class="hero-body">
         <div class="container">
             <h2 class="title is-3 has-text-centered">World Model Generation Results</h2>
-            <div class="columns is-centered"><p>Through iterative updating, our world model can generate videos that are highly aligned with conditioning action and adhere to physical dynamics.</p></div>
+            <div class="columns is-centered"><p>Through iterative updating, our world model can generate videos that are highly aligned with conditioning action and adhere to physical dynamics. <b>Note:</b> there is a minor temporal mismatch between the ground-truth and generated videos. This discrepancy arises because we truncate the ground-truth action trajectories to the nearest multiple of our fixed action chunk size rather than using their full original length. To ensure consistent visual comparison, we synchronize the frame rates (FPS) of both videos to achieve an identical total duration.</p></div>
             <div class="columns is-centered">
                 <div class="column is-four-fifths">
                     <div id="results-carousel" class="carousel results-carousel">
@@ -412,6 +412,12 @@
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
                                     </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page1/1-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
+                                    </div>
                                 </div>
                                 <div class="column is-one-quarter">
                                     <div style="margin-bottom: 10px;">
@@ -419,6 +425,12 @@
                                             <source src="figures/worldgen_videos/page1/2.mp4" type="video/mp4">
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page1/2-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
                                     </div>
                                 </div>
                                 <div class="column is-one-quarter">
@@ -428,6 +440,12 @@
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
                                     </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page1/3-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
+                                    </div>
                                 </div>
                                 <div class="column is-one-quarter">
                                     <div style="margin-bottom: 10px;">
@@ -435,6 +453,12 @@
                                             <source src="figures/worldgen_videos/page1/4.mp4" type="video/mp4">
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page1/4-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
                                     </div>
                                 </div>
                             </div>
@@ -451,6 +475,12 @@
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
                                     </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page2/1-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
+                                    </div>
                                 </div>
                                 <div class="column is-one-quarter">
                                     <div style="margin-bottom: 10px;">
@@ -458,6 +488,12 @@
                                             <source src="figures/worldgen_videos/page2/2.mp4" type="video/mp4">
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page2/2-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
                                     </div>
                                 </div>
                                 <div class="column is-one-quarter">
@@ -467,6 +503,12 @@
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
                                     </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page2/3-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
+                                    </div>
                                 </div>
                                 <div class="column is-one-quarter">
                                     <div style="margin-bottom: 10px;">
@@ -474,6 +516,12 @@
                                             <source src="figures/worldgen_videos/page2/4.mp4" type="video/mp4">
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page2/4-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
                                     </div>
                                 </div>
                             </div>
@@ -490,6 +538,12 @@
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
                                     </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page3/1-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
+                                    </div>
                                 </div>
                                 <div class="column is-one-quarter">
                                     <div style="margin-bottom: 10px;">
@@ -497,6 +551,12 @@
                                             <source src="figures/worldgen_videos/page3/2.mp4" type="video/mp4">
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page3/2-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
                                     </div>
                                 </div>
                                 <div class="column is-one-quarter">
@@ -506,6 +566,12 @@
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
                                     </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page3/3-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
+                                    </div>
                                 </div>
                                 <div class="column is-one-quarter">
                                     <div style="margin-bottom: 10px;">
@@ -513,6 +579,12 @@
                                             <source src="figures/worldgen_videos/page3/4.mp4" type="video/mp4">
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page3/4-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
                                     </div>
                                 </div>
                             </div>
@@ -529,6 +601,12 @@
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
                                     </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page4/1-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
+                                    </div>
                                 </div>
                                 <div class="column is-one-quarter">
                                     <div style="margin-bottom: 10px;">
@@ -536,6 +614,12 @@
                                             <source src="figures/worldgen_videos/page4/2.mp4" type="video/mp4">
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page4/2-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
                                     </div>
                                 </div>
                                 <div class="column is-one-quarter">
@@ -545,6 +629,12 @@
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Success</p>
                                     </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page4/3-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
+                                    </div>
                                 </div>
                                 <div class="column is-one-quarter">
                                     <div style="margin-bottom: 10px;">
@@ -552,6 +642,12 @@
                                             <source src="figures/worldgen_videos/page4/4.mp4" type="video/mp4">
                                         </video>
                                         <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 14px;">Failure</p>
+                                    </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <video controls muted loop preload="metadata" style="width: 100%; display: block;">
+                                            <source src="figures/worldgen_videos/page4/4-GT-p.mp4" type="video/mp4">
+                                        </video>
+                                        <p class="has-text-centered" style="margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 12px; color: #666;">Ground Truth</p>
                                     </div>
                                 </div>
                             </div>
