@@ -1,80 +1,48 @@
-# Academic Project Page Template
 
-> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
+<p align="center">
 
-A clean, responsive template for academic project pages.
+  <h2 align="center">World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy</h2>
+  <p align="center">
+    <a href="https://scholar.google.com/citations?user=dAEHm8AAAAAJ&hl=en"><strong>Xiaokang Liu*</strong></a>
+    ·
+    <a href="https://scholar.google.com/citations?user=aIdQ8GwAAAAJ&hl=en"><strong>Zechen Bai*</strong></a>
+    ·
+    <a href="https://scholar.google.com/citations?user=GMrjppAAAAAJ&hl=en"><strong>Hai Ci</strong></a>
+    ·
+    <a href="https://scholar.google.com/citations?user=_6xM_IcAAAAJ&hl=en"><strong>Kevin Yuchen Ma</strong></a>
+    ·
+    <a href="https://scholar.google.com/citations?user=h1-3lSoAAAAJ&hl=en"><strong>Mike Zheng Shou</strong></a>
+    <br>
+    <br>
+        <a href="https://arxiv.org/abs/2602.06508"><img src='https://img.shields.io/badge/arXiv-AntiReference' alt='PDF - todo'></a>
+        <a href='https://showlab.github.io/World-VLA-Loop/'><img src='https://img.shields.io/badge/Project_Page-AntiReference' alt='Project Page - todo'></a>
+        <!-- <a href='https://huggingface.co/spaces/zcxu-eric/magicanimate'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a> -->
+    <br>
+    <b>Show Lab, National University of Singapore</b>
+  </p>
+  
+  <table align="center">
+    <tr>
+    <td>
+      <img src="figures/teaser.png" alt='teaser1'>
+    </td>
+    </tr>
+  </table>
 
+## 📢 News
+* **[Feb.9.2026]** Release World-VLA-Loop paper.
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+## Source Code
 
+In preparation!
 
-
-## Start using the template
-To start using the template click on `Use this Template`.
-
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
-
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
-
-## What's New
-
-- Modern, clean design with better mobile support
-- Improved SEO with proper meta tags and structured data
-- Performance improvements (lazy loading, optimized assets)
-- More Works dropdown
-- Copy button for BibTeX citations
-- Better accessibility
-
-## Components
-
-- Teaser video
-- Image carousel
-- YouTube video embedding
-- Video carousel
-- PDF poster viewer
-- BibTeX citation
-
-## Customization
-
-The HTML file has TODO comments showing what to replace:
-
-- Paper title, authors, institution, conference
-- Links (arXiv, GitHub, etc.)
-- Abstract and descriptions  
-- Videos, images, and PDFs
-- Related works in the dropdown
-- Meta tags for SEO and social sharing
-
-### Meta Tags
-The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
-- Google Scholar indexing
-- Social media previews (Twitter, Facebook, LinkedIn)
-- Search engine optimization
-
-Create a 1200x630px social preview image at `static/images/social_preview.png`.
-
-## Tips
-
-- Compress images with [TinyPNG](https://tinypng.com)
-- Use YouTube for large videos (>10MB)  
-- Replace the favicon in `static/images/`
-- Works with GitHub Pages
-
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
-
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+## Citation
+If you find this codebase useful for your research, please use the following entry.
+```BibTeX
+@article{liu2026worldvlaloop,
+  title={World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy},
+  author={Liu, Xiaokang and Bai, Zechen and Ci, Hai and Ma, Kevin Yuchen and Shou, Mike Zheng},
+  journal={arXiv preprint arXiv:2602.06508},
+  year={2026}
+}
+```
